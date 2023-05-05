@@ -1,0 +1,56 @@
+body {
+    background-color: #5ec4b1;
+ }
+.home {
+    background: url("/static/app/diagnostic_home.jpg");
+    height: 80vh;
+    width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 10vh;
+}
+
+.home::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #59a093;
+    box-shadow: 0 0 50px 50px #318878 inset;
+    z-index: -1;
+    opacity: 15%;
+}
+
+.btn {
+    padding: 2.5vh 5vh;
+    font-size: 1.5em;
+}
+h1 {
+    color: #318878;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.main-content {
+    margin-top: 32.5vh;
+}
+#btn-home {
+    margin-top: 5vh;
+    background-color: #397e76; 
+    border-radius: 0;
+    border: white;
+    opacity: 100%;
+    cursor: default;
+    transition: opacity 0.25s ease-in-out;
+}
+#btn-home:hover {
+    opacity: 50%;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+}
