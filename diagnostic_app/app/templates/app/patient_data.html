@@ -1,4 +1,77 @@
 {% extends "app/layout.html" %}
 {% block content %}
-    <h1>ABOUT</h1>
+<head>
+    <style>
+      body {
+        background-color: #76D5AB;
+      }
+    </style>
+</head>
+
+    <main class="patient">
+        <div class="container" id="patient">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group mt-3">
+                        <input type="name" class="form-control" placeholder="Imię">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group mt-3">
+                        <input type="name" class="form-control" placeholder="Nazwisko">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="patient-gender">
+                          <option value="1">Mężczyzna</option>
+                          <option value="2">Kobieta</option>
+                        </select>
+                        <label for="patient-gender">Płeć</label>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="patient-age" min="1" max="130" placeholder="Wiek">
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-floating">
+                        <select class="form-select" id="patient-diagnoses">
+                            <option value="">Wybierz diagnozę</option>
+                            <option value="F01">F01. Zespół otępienny pod postacią choroby Alzheimera</option>
+                            <option value="F02">F02. Zespół otępienny pod postacią choroby naczyniowej</option>
+                            <option value="F03">F03. Zespół otępienny, nie określony inaczej</option>
+                            <option value="F04">F04. Zespół zaburzeń psychicznych i zachowania, spowodowany przez chorobę lub dysfunkcję mózgu[...]</option>
+                            <option value="F05">F05. Zespół zaburzeń psychotycznych i zaburzeń nastroju, spowodowany przez chorobę lub dysfunkcję [...]</option>
+                            <option value="F06">F06. Inne zaburzenia psychiczne i zachowania, spowodowane przez chorobę lub dysfunkcję mózgu, gdzie nie wskazano innej klasyfikacji</option>
+                            <option value="F07">F07. Zaburzenia osobowości i zachowania spowodowane chorobą, uszkodzeniem lub dysfunkcją mózgu</option>
+                            <option value="F09">F09. Zaburzenia rozwojowe i zaburzenia funkcjonowania mózgu, spowodowane chorobą, uszkodzeniem lub zaburzeniami metabolicznymi</option>
+                            <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
+                            <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
+                            <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
+                            <option value="F13">F13. Zaburzenia psychiczne i zachowania spowodowane używaniem sedatywów lub hipnotyków</option>
+                            <option value="F14">F14. Zaburzenia psychiczne i zachowania spowodowane używaniem kokainy</option>
+                            <option value="F15">F15. Zaburzenia psychiczne i zachowania spowodowane używaniem innych substancji psychoaktywnych</option>
+                            <option value="F17">F17. Zaburzenia psychiczne i zachowania spowodowane używaniem tytoniu</option>
+                            <option value="F18">F18. Zaburzenia psychiczne i zachowania spowodowane używaniem substancji lotnych</option>
+                            <option value="F19">F19. Zaburzenia psychiczne i zachowania spowodowane używaniem innych substancji psychoaktywnych niż wymienione gdzie indziej</option>
+                        </select>
+                        <label for="patient-diagnoses">Dotychczas stwierdzone rozpoznania</label>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <a href="{% url 'app-symptoms' %}" id="btn-right" class="btn btn-primary btn-lg btn-home" role="button">Objawy</a>
+                </div>
+            </div>
+        </div>
+    </main>
 {% endblock content %}

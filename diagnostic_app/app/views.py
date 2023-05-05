@@ -8,3 +8,6 @@ def home(request):
 def patient(request):
     return render(request, 'app/patient_data.html', {'title': 'Patient Data'})
 
+def symptoms(request):
+    return render(request, 'app/symptoms.html', {'title': 'Symptoms'})
+

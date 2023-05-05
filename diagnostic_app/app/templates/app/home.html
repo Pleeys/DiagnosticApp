@@ -1,15 +1,24 @@
 {% extends "app/layout.html" %}
 {% block content %}
-    <main class="home bg-image">
+<head>
+    <style>
+      body {
+        background-color: #5ec4b1;
+      }
+    </style>
+</head>
+<main class="main-home">
+    <div class="home">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="main-content text-center">
                         <h1>Rozpocznij diagnozę</h1>
-                        <button type="button" class="btn btn-lg btn-primary" id="btn-home">Nowy Pacjent</button>
+                        <a href="{% url 'app-patient' %}" id="btn-home" class="btn btn-primary btn-lg active" role="button">Nowy Pacjent</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+</main>
 {% endblock content %}

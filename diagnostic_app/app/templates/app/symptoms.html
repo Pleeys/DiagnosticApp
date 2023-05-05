@@ -1,0 +1,75 @@
+{% extends "app/layout.html" %}
+{% block content %}
+<head>
+    <style>
+      body {
+        background-color: #5EC4B1;
+      }
+    </style>
+</head>
+
+    <main class="symptoms">
+        <div class="container" id="symptoms">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="patient-symptoms-description">Objawy emocjonalno-motywacyjne</label>
+                    <div class="form-floating">
+                        <select class="form-select" id="patient-symptoms">
+                            <option value="">Wybierz diagnozę</option>
+                            <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
+                            <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
+                            <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
+                        </select>
+                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="patient-symptoms-description">Objawy poznawcze</label>
+                    <div class="form-floating">
+                        <select class="form-select" id="patient-symptoms">
+                            <option value="">Wybierz diagnozę</option>
+                            <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
+                            <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
+                            <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
+                        </select>
+                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="patient-symptoms-description">Objawy behawioralne</label>
+                    <div class="form-floating">
+                        <select class="form-select" id="patient-symptoms">
+                            <option value="">Wybierz diagnozę</option>
+                            <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
+                            <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
+                            <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
+                        </select>
+                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="patient-symptoms-description">Objawy interpersonalne</label>
+                    <div class="form-floating">
+                        <select class="form-select" id="patient-symptoms">
+                            <option value="">Wybierz diagnozę</option>
+                            <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
+                            <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
+                            <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
+                        </select>
+                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center justify-content-lg-start">
+                    <a href="{% url 'app-patient' %}" id="btn-left" class="btn btn-primary btn-lg active btn-home" role="button">Dane Pacjenta</a>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center justify-content-lg-end">
+                    <a href="{% url 'app-symptoms' %}" id="btn-right" class="btn btn-primary btn-lg active btn-home" role="button">Objawy</a>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
