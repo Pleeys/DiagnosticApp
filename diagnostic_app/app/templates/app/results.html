@@ -1,0 +1,59 @@
+{% extends "app/layout.html" %}
+{% block content %}
+<head>
+    <style>
+      body {
+        background-color: #9ce7ec;
+      }
+    </style>
+</head>
+
+    <main class="results">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6 mb-sm-3 mb-lg-0">
+                <div class="main_results">
+                    <h1>Jednostki spełniające kryteria</h1>
+                    <h2>Depresja</h2>
+                    <h4>Objaw1</h4>
+                    <h4>Objaw2</h4>
+                    <h4>Objaw3</h4>
+                    <h4>Objaw4</h4>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6 ">
+                <div class="other_results">
+                    <h2>Choroba 1</h2>
+                    <h4>Objaw1</h4>
+                    <h4>Objaw2</h4>
+                    <h4>Objaw3</h4>
+                    <h4>Objaw4</h4>
+
+                    <h2>Choroba 2</h2>
+                    <h4>Objaw1</h4>
+                    <h4>Objaw2</h4>
+                    <h4>Objaw3</h4>
+                    <h4>Objaw4</h4>
+
+                    <h2>Choroba 3</h2>
+                    <h4>Objaw1</h4>
+                    <h4>Objaw2</h4>
+                    <h4>Objaw3</h4>
+                    <h4>Objaw4</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center justify-content-lg-start">
+                    <a href="{% url 'app-symptoms' %}" id="btn-left" class="btn btn-primary btn-lg active btn-home" role="button">Symptomy</a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center">
+                    <a href="{% url 'app-comments' %}" id="btn-left" class="btn btn-primary btn-lg active btn-home" role="button">Dodaj Komentarz</a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center justify-content-lg-end">
+                    <a href="{% url 'app-results' %}" id="btn-right" class="btn btn-primary btn-lg active btn-home" role="button">Diagnoza</a>
+                </div>
+            </div>
+          </div>      
+    </main>
+{% endblock content %}

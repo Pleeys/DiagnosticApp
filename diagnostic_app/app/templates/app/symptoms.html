@@ -12,7 +12,7 @@
         <div class="container" id="symptoms">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <label for="patient-symptoms-description">Objawy emocjonalno-motywacyjne</label>
+                    <label class="patient-symptoms-description">Objawy emocjonalno-motywacyjne</label>
                     <div class="form-floating">
                         <select class="form-select" id="patient-symptoms">
                             <option value="">Wybierz diagnozę</option>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <label for="patient-symptoms-description">Objawy poznawcze</label>
+                    <label class="patient-symptoms-description">Objawy poznawcze</label>
                     <div class="form-floating">
                         <select class="form-select" id="patient-symptoms">
                             <option value="">Wybierz diagnozę</option>
@@ -38,7 +38,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <label for="patient-symptoms-description">Objawy behawioralne</label>
+                    <label class="patient-symptoms-description">Objawy behawioralne</label>
                     <div class="form-floating">
                         <select class="form-select" id="patient-symptoms">
                             <option value="">Wybierz diagnozę</option>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <label for="patient-symptoms-description">Objawy interpersonalne</label>
+                    <label class="patient-symptoms-description">Objawy interpersonalne</label>
                     <div class="form-floating">
                         <select class="form-select" id="patient-symptoms">
                             <option value="">Wybierz diagnozę</option>
@@ -67,7 +67,7 @@
                     <a href="{% url 'app-patient' %}" id="btn-left" class="btn btn-primary btn-lg active btn-home" role="button">Dane Pacjenta</a>
                 </div>
                 <div class="col-sm-6 d-flex justify-content-center justify-content-lg-end">
-                    <a href="{% url 'app-symptoms' %}" id="btn-right" class="btn btn-primary btn-lg active btn-home" role="button">Objawy</a>
+                    <a href="{% url 'app-results' %}" id="btn-right" class="btn btn-primary btn-lg active btn-home" role="button">Diagnoza</a>
                 </div>
             </div>
         </div>

@@ -29,10 +29,13 @@
     padding: 2.5vh 5vh;
     font-size: 1.5em;
 }
-h1 {
+#h1-home {
     color: #318878;
     font-family: "Helvetica Neue", Arial, sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    color: #03505d;
 }
 .main-content {
     margin-top: 32.5vh;
@@ -53,7 +56,7 @@ h1 {
 }
 
 .row .btn-home {
-    margin-top: 5vh;
+    margin-top: 2.5vh;
     background-color: #397e76; 
     border-radius: 0;
     border: white;
@@ -86,4 +89,23 @@ h1 {
 }
 .row .patient-symptoms-description {
     color: white;
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+
+}
+.main_results {
+    height: 70vh;
+    background-color: #fefffe;
+    border-radius: 30px;
+    text-align: center;
+    margin: 1vh 1vw;
+    overflow: auto;
+}
+.other_results {
+    height: 70vh;
+    background-color: #fefffe;
+    border-radius: 30px;
+    text-align: center;
+    margin: 1vh 1vw;
+    overflow: auto;
 }
