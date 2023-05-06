@@ -29,6 +29,26 @@
     padding: 2.5vh 5vh;
     font-size: 1.5em;
 }
+#btn-exit {
+    position: fixed;
+    right: 5vw;
+    top: 5vh;
+    padding: 1vh 1vh;
+    font-size: 1.5em;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    background-color: #03505d;
+    border: white;
+    opacity: 100%;
+    cursor: default;
+    transition: opacity 0.25s ease-in-out;
+}
+#btn-exit:hover {
+    opacity: 50%;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+}
 #h1-home {
     color: #318878;
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -119,4 +139,13 @@ h1 {
 textarea {
     max-height: 30vh;
     min-height: 15vh;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .cognitive-symptoms {
+      margin-top: 4vh;
+    }
+  }
+.multiple-select  {
+    min-width: 100%;
 }

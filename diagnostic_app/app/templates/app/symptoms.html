@@ -1,4 +1,5 @@
 {% extends "app/layout.html" %}
+{% load static %}
 {% block content %}
 <head>
     <style>
@@ -14,25 +15,23 @@
                 <div class="col-sm-12 col-md-6">
                     <label class="patient-symptoms-description">Objawy emocjonalno-motywacyjne</label>
                     <div class="form-floating">
-                        <select class="form-select" id="patient-symptoms">
-                            <option value="">Wybierz diagnozę</option>
+                        <select class="multiple-select" id="patient-symptoms-1" multiple name="native-select" placeholder="Wybierz Diagnozę" data-search="false" data-silent-initial-value-set="true">
+                            <option value="none">Brak</option>
                             <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
                             <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
                             <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
                         </select>
-                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <label class="patient-symptoms-description">Objawy poznawcze</label>
+                    <label class="patient-symptoms-description cognitive-symptoms">Objawy poznawcze</label>
                     <div class="form-floating">
-                        <select class="form-select" id="patient-symptoms">
-                            <option value="">Wybierz diagnozę</option>
+                        <select class="multiple-select" id="patient-symptoms-2" multiple name="native-select" placeholder="Wybierz Diagnozę" data-search="false" data-silent-initial-value-set="true">
+                            <option value="none">Brak</option>
                             <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
                             <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
                             <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
                         </select>
-                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
                     </div>
                 </div>
             </div>
@@ -40,25 +39,23 @@
                 <div class="col-sm-12 col-md-6">
                     <label class="patient-symptoms-description">Objawy behawioralne</label>
                     <div class="form-floating">
-                        <select class="form-select" id="patient-symptoms">
-                            <option value="">Wybierz diagnozę</option>
+                        <select class="multiple-select" id="patient-symptoms-3" multiple name="native-select" placeholder="Wybierz Diagnozę" data-search="false" data-silent-initial-value-set="true">
+                            <option value="none">Brak</option>
                             <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
                             <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
                             <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
                         </select>
-                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <label class="patient-symptoms-description">Objawy interpersonalne</label>
                     <div class="form-floating">
-                        <select class="form-select" id="patient-symptoms">
-                            <option value="">Wybierz diagnozę</option>
+                        <select class="multiple-select" id="patient-symptoms-4" multiple name="native-select" placeholder="Wybierz Diagnozę" data-search="false" data-silent-initial-value-set="true">
+                            <option value="none">Brak</option>
                             <option value="F10">F10. Zaburzenia psychiczne i zachowania spowodowane używaniem alkoholu</option>
                             <option value="F11">F11. Zaburzenia psychiczne i zachowania spowodowane używaniem opiatów</option>
                             <option value="F12">F12. Zaburzenia psychiczne i zachowania spowodowane używaniem kannabinoidów</option>
                         </select>
-                        <label for="patient-symptoms">Filtruj według F00.0 Początek wczesny</label>
                     </div>
                 </div>
             </div>
@@ -71,5 +68,16 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="{% static 'app/virtual-select.min.js' %}" ></script>
+        <script type="text/javascript">
+            
+            const selectors = ['#patient-symptoms-1', '#patient-symptoms-2', '#patient-symptoms-3', '#patient-symptoms-4'];
+
+            for (const selector of selectors) {
+            VirtualSelect.init({
+                ele: selector
+            });
+            }
+        </script>
     </main>
 {% endblock content %}
