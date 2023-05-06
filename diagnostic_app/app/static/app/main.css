@@ -109,3 +109,14 @@ h1 {
     margin: 1vh 1vw;
     overflow: auto;
 }
+.block-comments {
+    min-height: 70vh;
+    margin-top: 15vh;
+    background-color: #015450;
+    border-radius: 30px;
+}
+
+textarea {
+    max-height: 30vh;
+    min-height: 15vh;
+}

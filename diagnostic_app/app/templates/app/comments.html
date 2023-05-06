@@ -1,0 +1,33 @@
+{% extends "app/layout.html" %}
+{% block content %}
+<head>
+    <style>
+      body {
+        background-color: #fefefe;
+      }
+    </style>
+</head>
+
+<main class="results">
+    <div class="container block-comments">
+        <div class="row">
+            <div class="col-sm-12">
+              <div class="d-flex flex-column justify-content-between h-50" style="margin-top: 10vh;">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 25vh"></textarea>
+                    <label for="floatingTextarea2">Komentarz</label>
+                  </div>
+                  <div class="row" style="margin-top: 10vh;">
+                    <div class="col-sm-6 d-flex justify-content-center justify-content-lg-start">
+                        <a href="{% url 'app-results' %}" id="btn-right" class="btn btn-primary btn-lg active btn-home" role="button">Diagnoza</a>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-center justify-content-lg-end">
+                        <a href="" id="btn-right" class="btn btn-primary btn-lg active btn-home" role="button">Dodaj Komentarz</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>    
+</main>
+{% endblock content %}
