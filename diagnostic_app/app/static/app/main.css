@@ -8,7 +8,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    margin-top: 10vh;
 }
 
 .home::after {
@@ -24,7 +23,9 @@
     z-index: -1;
     opacity: 15%;
 }
-
+.btn-navbar:hover {
+    color: white;
+}
 .btn {
     padding: 2.5vh 5vh;
     font-size: 1.5em;
@@ -76,6 +77,7 @@ h1 {
 }
 
 .row .btn-home {
+    color: white;
     margin-top: 2.5vh;
     background-color: #397e76; 
     border-radius: 0;
@@ -84,19 +86,22 @@ h1 {
     cursor: default;
     transition: opacity 0.25s ease-in-out;
 }
+
 .row .btn-home:hover {
     opacity: 50%;
     cursor: pointer;
     transition: opacity 0.25s ease-in-out;
 }
-.row .btin-home:visited,
+
+.row .btn-home:visited,
 .btn-home:active,
 .btn-home:focus,
 .btn-home:active:focus{
-    color: inherit;
+    color: white;
     text-decoration: none;
     background-color: #59a093;
 }
+
 #btn-right{
     position: relative;
     bottom: 0;
@@ -107,12 +112,30 @@ h1 {
     bottom: 0;
     left: 0;
 }
+#btn-dismiss {
+    margin: auto;
+    border: none;
+    padding: 0.5vh;
+    background-color: #59a093;
+}
+#btn-delete {
+    margin: auto;
+    border: none;
+    padding: 0.5vh;
+    background-color: #106d7e;
+}
 .row .patient-symptoms-description {
     color: white;
     margin-bottom: 1vh;
     font-size: 1.5rem;
-
 }
+.form-control::placeholder {
+    text-align: center;
+  }
+.register_panel {
+    margin: 2.5vh;
+}
+
 .main_results {
     height: 70vh;
     background-color: #fefffe;

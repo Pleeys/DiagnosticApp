@@ -14,3 +14,9 @@ def results(request):
 
 def comments(request):
     return render(request, 'app/comments.html', {'title': 'Comments'})
+
+def register(request):
+    return render(request, 'app/register.html', {'title': 'Register'})
+
+def login(request):
+    return render(request, 'app/login.html', {'title': 'Login'})

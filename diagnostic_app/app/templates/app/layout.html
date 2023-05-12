@@ -18,7 +18,7 @@
     </head>
     <body>
         <button id="btn-exit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-            Otwórz modal
+            Usuń pacjenta
         </button>
         <div class="container">
             {% block content %}
@@ -36,8 +36,8 @@
               <p>Czy na pewno chcesz usunąć wszystkie dane wprowadzone dla tego pacjenta? Tej operacji nie będzie można cofnąć.</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-home" data-bs-dismiss="modal">Anuluj</button>
-              <button type="button" class="btn btn-primary btn-home">Usuń</button>
+                <button type="button" id="btn-dismiss" class="btn btn-secondary btn-sm btn-home" data-bs-dismiss="modal">Anuluj</button>
+                <button type="button" id="btn-delete" class="btn btn-primary btn-sm btn-home">Usuń</button>
             </div>
           </div>
         </div>

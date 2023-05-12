@@ -11,6 +11,7 @@ from django.db import models
 #     last_name = models.CharField(max_length=50)
 #     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
 #     date_of_birth = models.DateField()
+#     diagnoses_confirmed = models.ManyToManyField(Diagnoses)
 
 # class Doctors(models.Model):
 #     doctor_id = models.AutoField(primary_key=True)

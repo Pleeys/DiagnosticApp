@@ -35,15 +35,17 @@
                         <label for="patient-gender">Płeć</label>
                       </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="patient-age" min="1" max="130" placeholder="Wiek">
-                      </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-3 mt-md-0">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="birth-date" name="birth-date">
+                            <label for="birth-date">Data urodzenia</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <select class="multiple-select" id="patient-diagnoses" multiple name="native-select" placeholder="Wybierz Diagnozę" data-search="false" data-silent-initial-value-set="true">
+                    <select class="multiple-select" id="patient-diagnoses-confirmed" multiple name="native-select" placeholder="Wybierz Diagnozę" data-search="false" data-silent-initial-value-set="true">
                         <option value="">Brak</option>
                         <option value="F01">F01. Zespół otępienny pod postacią choroby Alzheimera</option>
                         <option value="F02">F02. Zespół otępienny pod postacią choroby naczyniowej</option>
@@ -78,7 +80,7 @@
         <script type="text/javascript">
             
             VirtualSelect.init({ 
-                ele: '#patient-diagnoses' 
+                ele: '#patient-diagnoses-confirmed' 
             });
         </script>
         

@@ -5,9 +5,21 @@
       body {
         background-color: #5ec4b1;
       }
+      #btn-exit {
+        display: none;
+      }
+      .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
     </style>
 </head>
+
 <main class="main-home">
+    <div class="navbar">
+        <a href="{% url 'app-login' %}" id="login_button" class="btn btn-sm btn-navbar" role="button">Login</a>
+        <a href="{% url 'app-register' %}" id="register_button" class="btn btn-sm btn-navbar" role="button">Register</a>
+    </div>  
     <div class="home">
         <div class="container">
             <div class="row">
@@ -15,7 +27,7 @@
                     <div class="main-content text-center">
                         <h1 id="h1-home">Rozpocznij diagnozę</h1>
                         <a href="{% url 'app-patient' %}" id="main_button" class="btn btn-primary btn-lg active btn-home" role="button">Nowy Pacjent</a>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
