@@ -147,7 +147,12 @@ h1 {
 .register_panel {
     margin: 2.5vh;
 }
-
+.form-group {
+    text-align: center;
+}
+.container-register {
+    margin-top: 15vh;
+}
 .main_results {
     height: 70vh;
     background-color: #fefffe;
@@ -175,7 +180,12 @@ textarea {
     max-height: 30vh;
     min-height: 15vh;
 }
-
+.alert {
+    position: absolute;
+    margin-top: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
     .cognitive-symptoms {
       margin-top: 4vh;
